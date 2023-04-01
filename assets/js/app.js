@@ -21,15 +21,7 @@ import 'phoenix_html';
 import { Socket } from 'phoenix';
 import { LiveSocket } from 'phoenix_live_view';
 import topbar from '../vendor/topbar';
-import { CartItemHook } from '../components/CartItem';
-
-let Hooks = {};
-
-Hooks.ItemHook = {
-  mounted() {
-    // CartItemHook(this.el);
-  },
-};
+import '../components/CartItem';
 
 let csrfToken = document
   .querySelector("meta[name='csrf-token']")
